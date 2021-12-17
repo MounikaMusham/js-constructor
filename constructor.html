@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="one"></p>
+<p id="two"></p>
+<p id="three"></p>
+
+<script>
+function student(name,age,standard,rollno,marks) {
+    
+  this.firstName=name;
+  this.age=age;
+  this.class=standard;
+  this.rollno = rollno;
+  this.totalMarks=marks;
+}
+
+const kishore= new student("kishore",12,7,20,90);
+const sai= new student("sai",13,7,21,91);
+const mounika= new student("mounika",14,7,22,92);
+const aadya= new student("aadya",15,7,23,93);
+const ramesh= new student("ramesh",16,7,24,94);
+const lalli= new student("lalli",17,7,25,95);
+
+document.getElementById("one").innerHTML =
+"kishore total marks: " + kishore.totalMarks + "."; 
+document.getElementById("two").innerHTML="mounika roll no:"+mounika.rollno+".";
+document.getElementById("three").innerHTML="sai age:"+sai.age+".";
+</script>
+</body>
+</html>
